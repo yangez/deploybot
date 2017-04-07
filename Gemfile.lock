@@ -72,6 +72,7 @@ GEM
       activesupport (>= 4.1.0)
     hashie (3.5.5)
     i18n (0.8.1)
+    interactor (3.1.0)
     jbuilder (2.6.3)
       activesupport (>= 3.0.0, < 5.2)
       multi_json (~> 1.2)
@@ -192,6 +193,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   dotenv-rails
   github_api
+  interactor (~> 3.0)
   jbuilder (~> 2.0)
   jquery-rails
   pg (~> 0.15)
