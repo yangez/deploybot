@@ -86,6 +86,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
+    memoist (0.15.0)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
@@ -196,6 +197,7 @@ DEPENDENCIES
   interactor (~> 3.0)
   jbuilder (~> 2.0)
   jquery-rails
+  memoist
   pg (~> 0.15)
   rails (= 4.2.7.1)
   rspec-rails
