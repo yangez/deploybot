@@ -73,6 +73,9 @@ GEM
     hashie (3.5.5)
     i18n (0.8.1)
     interactor (3.1.0)
+    interactor-rails (2.0.2)
+      interactor (~> 3.0)
+      rails (>= 3, < 5.1)
     jbuilder (2.6.3)
       activesupport (>= 3.0.0, < 5.2)
       multi_json (~> 1.2)
@@ -173,6 +176,7 @@ GEM
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.7)
+    timecop (0.8.1)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.0)
@@ -194,7 +198,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   dotenv-rails
   github_api
-  interactor (~> 3.0)
+  interactor-rails
   jbuilder (~> 2.0)
   jquery-rails
   memoist
@@ -205,6 +209,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   slack-notifier
   spring
+  timecop
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)

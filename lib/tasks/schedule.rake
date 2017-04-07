@@ -2,7 +2,7 @@
 namespace :schedule do
   desc '15 minutes slack alert'
   task alert_15_mins: :environment do
-    # Slack notifier message
+    return unless (Time.zone.parse("4:40pm")..Time.zone.parse("4:50pm")).cover? Time.current
     NotifySlack.call(message: ":clock2: Release branch going up in 15 minutes.")
   end
 
