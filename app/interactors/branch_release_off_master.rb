@@ -3,7 +3,7 @@ class BranchReleaseOffMaster
   extend Memoist
   delegate :message, to: :context
 
-  ACTIVE_DAYS = %(Monday Tuesday Wednesday Thursday Friday)
+  ACTIVE_DAYS = %(Monday Tuesday Wednesday Thursday)
 
   before do
     context.fail!(message: "Not a weekday.") unless ACTIVE_DAYS.include? Date.current.strftime("%A")
