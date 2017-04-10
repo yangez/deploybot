@@ -8,6 +8,8 @@ namespace :schedule do
 
   desc 'Create a release branch and send Slack notification'
   task create_release_branch: :environment do
-    CreateReleaseBranch.call
+    result = CreateReleaseBranch.call
+    label = result.success? ? "Success" : "Failed"
+    Rails.logger.info "#{label}: #{result.message}"
   end
 end

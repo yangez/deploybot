@@ -6,7 +6,7 @@ class BranchReleaseOffMaster
   ACTIVE_DAYS = %(Monday Tuesday Wednesday Thursday Friday)
 
   before do
-    context.fail!(reason: :inactive_day) unless ACTIVE_DAYS.include? Date.current.strftime("%A")
+    context.fail!(message: "Not a weekday.") unless ACTIVE_DAYS.include? Date.current.strftime("%A")
   end
 
   def call
